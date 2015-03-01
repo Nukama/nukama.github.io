@@ -5,7 +5,7 @@
         <a href="/news/">All News</a>
       </li>
       <li class="{% if page.title == 'Releases' %}current{% endif %}">
-        <a href="/news/releases/">Jekyll Releases</a>
+        <a href="/news/releases/">QubesOS Releases</a>
       </li>
     </ul>
     <h4>Recent Releases</h4>
@@ -16,13 +16,13 @@
       </li>
       {% endfor %}
       <li>
-        <a href="/docs/history/">History »</a>
+        <a href="/wiki/history/">History »</a>
       </li>
     </ul>
     <h4>Other News</h4>
     <ul>
         {% for post in site.posts %}
-        {% unless post.categories contains 'release' %}
+        {% unless post.categories contains 'release' limit:15 %}
         <li class="{% if page.title == post.title %}current{% endif %}">
           <a href="{{ post.url }}">{{ post.title }}</a>
         </li>

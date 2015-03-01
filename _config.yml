@@ -1,15 +1,29 @@
+# Site settings
+title: Qubes OS Project
+description: "Qubes OS - Secure open-source desktop operating system"
+url: "https://nukama.github.io"
+repository: "https://github.com/Nukama/nukama.github.io"
+help_url: "https://github.com/Nukama/nukama.github.io/wiki"
+
+# Build settings
+timezone: UTC
+encoding: utf-8
 markdown: kramdown
 highlighter: pygments
 relative_permalinks: false
 permalink: /news/:year/:month/:day/:title/
 excerpt_separator: ""
 
-gauges_id: 503c5af6613f5d0f19000027
-google_analytics_id: UA-50755011-1
-
-repository: https://github.com/jekyll/jekyll
-help_url: https://github.com/jekyll/jekyll-help
-
 collections:
-  docs:
+#  docs:
+#    output: true
+  wiki:
     output: true
+
+#defaults:
+#  -
+#    scope:
+#      path: "posts" # an empty string here means all files in the project
+#    values:
+#      layout: "default"
+

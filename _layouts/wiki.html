@@ -2,19 +2,20 @@
 layout: default
 ---
 
-  <section class="docs">
+  <section class="wiki">
     <div class="grid">
 
-      {% include docs_contents_mobile.html %}
-      {% include docs_contents.html %}
+      {% include wiki_contents_mobile.html %}
+      {% include wiki_contents.html %}
 
       <div class="unit four-fifths">
         <article>
           <h1>{{ page.title }}</h1>
-          {% include section_nav.html %}
           {{ content }}
+          {% include section_nav.html %}
         </article>
       </div>
+
 
       <div class="clear"></div>
 
