@@ -20,12 +20,12 @@ collections:
   wiki:
     output: true
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
+#defaults:
+#  -
+#    scope:
+#      path: "" # an empty string here means all files in the project
+#    values:
+#      layout: "default"
 #  -
 #    scope:
 #      path: "posts/rootkovska" # an empty string here means all files in the project
