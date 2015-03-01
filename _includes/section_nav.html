@@ -12,7 +12,7 @@ next, lets build a link to it.
 {% endcomment %}
 
 {% for document in wiki %}
-  {% assign wiki_url = wiki | prepend:"/wiki/" | append:"/" %}
+  {% assign document_url = wiki | prepend:"/wiki/" | append:"/" %}
   {% if document_url == page.url %}
     <div class="section-nav">
       <div class="left align-right">
