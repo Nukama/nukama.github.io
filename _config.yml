@@ -23,11 +23,11 @@ collections:
 defaults:
   -
     scope:
-      path: "news" # an empty string here means all files in the project
+      path: "" # an empty string here means all files in the project
     values:
-      layout: "news"
-  -
-    scope:
-      path: "posts/rootkovska" # an empty string here means all files in the project
-    values:
-      layout: "news"
+      layout: "default"
+#  -
+#    scope:
+#      path: "posts/rootkovska" # an empty string here means all files in the project
+#    values:
+#      layout: "news"
