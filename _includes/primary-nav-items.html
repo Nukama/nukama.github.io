@@ -1,6 +1,6 @@
 <ul>
   <li class="{% if page.overview %}current{% endif %}">
-    <a href="/">Home</a>
+    <a href="/">Qubes</a>
   </li>
   <li class="{% if page.url contains '/wiki/' %}current{% endif %}">
     <a href="/wiki/">Wiki<span class="show-on-mobiles"></span><span class="hide-on-mobiles"></span></a>
@@ -10,5 +10,8 @@
   </li>
   <li>
     <a href="/help/">Help</a>
+  </li>
+  <li>
+    <a href="{{ site.repository }}">Source<span class="hide-on-mobiles"> Repositories</span></a>
   </li>
 </ul>

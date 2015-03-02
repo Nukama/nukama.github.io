@@ -23,7 +23,8 @@ permalink: /feed.xml
     <description>{{ site.description | xml_escape }}</description>
     <image>
       <description>Qubes OS Project</description>
-      <url>https://github.com/QubesOS/qubes-artwork/raw/master/icons/512x512/apps/qubes-logo-icon.png</url>
+      <url>{{ "/attachment/icons/128x128/apps/qubes-logo-icon.png" | prepend: site.baseurl | prepend: site.url }}</url>
+      <!--https://github.com/QubesOS/qubes-artwork/raw/master/icons/512x512/apps/qubes-logo-icon.png</url> -->
       <title>Qubes OS - Secure open-source desktop operating system</title>
       <link>{{ site.url }}{{ site.baseurl }}/</link>
       <width>64</width>

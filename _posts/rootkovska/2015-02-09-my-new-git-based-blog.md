@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My New Git-based Blog
-author: rootkovska
+author: Joanna Rutkowska
 ---
 
 After using Google Blogger for nearly 9 years to [host my
