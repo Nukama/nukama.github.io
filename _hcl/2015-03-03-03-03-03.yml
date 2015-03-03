@@ -1,5 +1,6 @@
 ---
 layout:   hcl
+type:     Laptop
 model:    "Dell_Inc. Latitude_E6410"
 memory:   "3893 Mb"
 cpu:      "Intel(R) Core(TM) i5 CPU       M 560  @ 2.67GHz"
