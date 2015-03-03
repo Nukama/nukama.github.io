@@ -33,12 +33,7 @@ StackOverflow is a staple of any developer's diet. Check out the QubesOS tag
 on StackOverflow for an answer to your question. Not there? Ask a new
 question!
 
-### [QubesOS IRC Channel](irc:irc.freenode.net/QubesOS)
+### [QubesOS IRC Channel](irc:irc.freenode.net/qubes)
 
-Get together at **#QubesOS** on **irc.freenode.net**, the inofficial
+Get together at **#qubes** on **irc.freenode.net**, the inofficial
 QubesOS IRC channel.
-
-### [@QubesOS on Twitter](https://twitter.com/QubesOS)
-
-The inofficial QubesOS Twitter account. It's not checked, so try the
-above first.
