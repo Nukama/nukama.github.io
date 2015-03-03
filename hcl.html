@@ -1,0 +1,113 @@
+---
+layout: default
+permalink: "/hcl/"
+title: "Hardware Compatibility List"
+model: all
+---
+
+<table>
+{% for hcl in site.hcl %}
+  {% include hcl_item.html %}
+{% endfor %}
+</table>
+
+<!--
+<div class="grid">
+<table >
+    {% for entry in site.data.hcl %}
+        {% assign rowspan = entry.versions | size %}
+        <tr>
+            <td rowspan="{{ rowspan }}">{{ entry.model }}</td>
+            <td rowspan="{{ rowspan }}"
+                style="background:
+                    {% if entry.hvm %}green{% else %}red{% endif %}">
+                {{ entry.hvm }}
+            </td>
+            <td rowspan="{{ rowspan }}"
+                style="background:
+                    {% if entry.iommu %}green{% else %}red{% endif %}">
+                {{ entry.iommu }}
+            </td>
+            <td rowspan="{{ rowspan }}">{{ entry.kernel }}</td>
+            <td rowspan="{{ rowspan }}">{{ entry.xen }}</td>
+            <td rowspan="{{ rowspan }}">{{ entry.memory }}</td>
+            <td rowspan="{{ rowspan }}">{{ entry.cpu }}</td>
+            <td rowspan="{{ rowspan }}">{{ entry.credit }}</td>
+
+        {% case entry.versions[0].works %}
+        {% when true %}
+            {% assign background = 'green' %} 
+        {% when 'maybe' %}
+            {% assign background = 'yellow' %} 
+        {% else %}
+            {% assign background = 'red' %} 
+        {% endcase %}
+
+            <td style="background: {{ background }}">{{ entry.versions[0].qubes }}</td>
+            <td style="background: {{ background }}">{{ entry.versions[0].xen }}</td>
+            <td style="background: {{ background }}">{{ entry.versions[0].kernel }}</td>
+            <td style="background: {{ background }}">{{ entry.versions[0].remark }}</td>
+            <td style="background: {{ background }}">{{ entry.versions[0].credit }}</td>
+        </tr>
+
+        {% assign range = rowspan | minus:1 %}
+        {% for i in (1..range) %}
+            {% case entry.versions[i].works %}
+            {% when true %}
+                {% assign background = 'green' %} 
+            {% when 'maybe' %}
+                {% assign background = 'yellow' %} 
+            {% else %}
+                {% assign background = 'red' %} 
+            {% endcase %}
+
+            <tr>
+                <td style="background: {{ background }}">{{ entry.versions[i].qubes }}</td>
+                <td style="background: {{ background }}">{{ entry.versions[i].xen }}</td>
+                <td style="background: {{ background }}">{{ entry.versions[i].kernel }}</td>
+                <td style="background: {{ background }}">{{ entry.versions[i].remark }}</td>
+                <td style="background: {{ background }}">{{ entry.versions[i].credit }}</td>
+            </tr>
+        {% endfor %}
+    {% endfor %}
+</table>
+</div>
+-->
+<!--
+
+- model:    "Dell_Inc. Latitude_E6410"
+  memory:   3893 Mb
+  cpu:      "Intel(R) Core(TM) i5 CPU       M 560  @ 2.67GHz"
+  chipset: |
+    00:00.0 Host bridge [0600]: Intel Corporation Core Processor DRAM Controller [8086:0044] (rev 02)
+  vga: |
+    00:02.0 VGA compatible controller [0300]: Intel Corporation Core Processor Integrated Graphics Controller [8086:0046] (rev 02) (prog-if 00 [VGA controller])
+  network: |
+    00:19.0 Ethernet controller: Intel Corporation 82577LM Gigabit Network Connection (rev 05)
+    02:00.0 Network controller: Intel Corporation Centrino Wireless-N + WiMAX 6150 (rev 5f)
+  scsi:     "WDC WD3200BPVT-2 Rev: 01.0"
+  bios:     "A16"
+  hvm:      true
+  iommu:    false
+  versions:
+
+  - qubes:  R2
+    kernel: 3.12.23-1
+    xen:    4.1.6.1
+    remark: Aqq 123
+    works:  true
+    credit: "John Doe"
+
+  - qubes:  R17
+    kernel: 3.12.23-1
+    xen:    4.1.6.1
+    remark: Aqq 123
+    works:  true
+    credit: "Jane Doe"
+
+
+
+# vim: ts=4 sw=4 et
+-->
+
+

@@ -20,3 +20,7 @@ collections:
 #    output: true
   wiki:
     output: true
+  hcl:
+    output: false
+  author:
+    output: true

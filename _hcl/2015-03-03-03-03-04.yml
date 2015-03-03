@@ -1,0 +1,37 @@
+---
+layout:   hcl
+model:    "Dell_Inc. Latitude_E6410"
+memory:   "3893 Mb"
+cpu:      "Intel(R) Core(TM) i5 CPU       M 560  @ 2.67GHz"
+chipset: 
+- "00:00.0 Host bridge [0600]: Intel Corporation Core Processor DRAM Controller [8086:0044] (rev 02)"
+vga: 
+- "00:02.0 VGA compatible controller [0300]: Intel Corporation Core Processor Integrated Graphics Controller [8086:0046] (rev 02) (prog if 00 [VGA controller])"
+network: 
+- "00:19.0 Ethernet controller: Intel Corporation 82577LM Gigabit Network Connection (rev 05)"
+- "02:00.0 Network controller: Intel Corporation Centrino Wireless-N + WiMAX 6150 (rev 5f)"
+scsi:     
+- "WDC WD3200BPVT-2 Rev: 01.0"
+bios:     "A16"
+hvm:      true
+iommu:    false
+tpm:      false
+versions:
+
+- qubes:  R2
+  xen:    4.1.6.1
+  kernel: 3.12.23-1
+  remark: "Aqq 123"
+  works:  true
+  credit: "John Doe"
+
+- qubes:  R17
+  xen:    4.1.6.1
+  kernel: 3.12.23-1
+  remark: "Aqq 123"
+  works:  true
+  credit: "Jane Doe"
+---
+
+Nice model, works out of the box.
+This is a testentry
