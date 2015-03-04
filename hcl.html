@@ -6,8 +6,8 @@ model: all
 ---
 
 <table>
-{% for hcl in site.hcl %}
-  {% include hcl_item.html %}
+{% for device in site.hcl %}
+  {% include hcl-device.html %}
 {% endfor %}
 </table>
 
