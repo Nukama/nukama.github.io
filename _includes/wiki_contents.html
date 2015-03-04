@@ -1,8 +1,11 @@
-<div class="unit one-fifth hide-on-mobiles">
-  <aside>
+<div class="wiki-nav-mobile unit whole">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate the wiki…</option>
     {% for section in site.data.wiki %}
-    <h4>{{ section.title }}</h4>
-    {% include wiki_ul.html items=section.wiki %}
+    <optgroup label="{{ section.title }}">
+      {% include wiki_option.html items=section.wiki %}
+    </optgroup>
     {% endfor %}
-  </aside>
+  </select>
 </div>
+
