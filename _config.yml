@@ -4,6 +4,12 @@ description: "Qubes OS is an open source operating system designed to provide st
 repository: "https://github.com/Nukama/nukama.github.io"
 help_url: "https://github.com/Nukama/nukama.github.io/wiki"
 
+# Project Settings
+project_url: "https://www.qubes-os.org"
+project_repo_path: "https://github.com/QubesOS"
+project_repo_site: "/qubesos.github.io"
+project_repo_artwork: "/qubes-artwork"
+
 # Build settings
 timezone: UTC
 encoding: utf-8
@@ -12,10 +18,12 @@ highlighter: pygments
 relative_permalinks: false
 permalink: /news/:year/:month/:day/:title/
 excerpt_separator: ""
+gems:
+  - jekyll-redirect-from
 
 collections:
-#  docs:
-#    output: true
+  docs:
+    output: true
   wiki:
     output: true
   hcl:

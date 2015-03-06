@@ -19,10 +19,14 @@
 
     <div class="unit one-third align-right center-on-mobiles">
       <p>
-        <a href="{{ site.repository }}">Source of this site</a><br />
-        <a rel="license" href="{{ "/LICENSE" | prepend:  site.baseurl }}">
+        <a href="{{ site.repository }}">Site Source</a> - 
+        <a rel="license" href="{{ "/blob/master/LICENSE" | prepend: site.project_repo_site | prepend:  site.project_repo_path }}">
+        <b>LICENSE</b>
+        </a><br />
+        <a href="{{ site.repository }}">Site Content</a> - 
+        <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
         <img alt="License" style="border-width:0"
-             src="{{ "/attachment/img/LICENSE.png" | prepend:  site.baseurl }}"/>
+             src="{{ "/attachment/img/cc-by-nc-sa.png" | prepend:  site.baseurl }}"/>
         </a><br />
       </p>
     </div>

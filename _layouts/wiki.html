@@ -5,10 +5,7 @@ layout: default
   <section class="wiki">
     <div class="standalone">
 
-      <!--
-      {% include wiki_contents_mobile.html %}
-      -->
-      {% include wiki_contents.html %}
+      {% include wiki_nav.html %}
 
       <div class="unit whole">
         <article>
@@ -16,7 +13,7 @@ layout: default
           <h1>{{ page.title }}</h1>
           -->
           <div class="improve right hide-on-mobiles">
-            <a href="{{ "/_edit" | prepend: page.title | prepend: "/" | prepend: site.help_url }}"><!--<i class="fa fa-pencil"></i> &nbsp;-->edit</a>
+            <a href="{{ "_edit" | prepend: page.url | replace: '/wiki', '' | prepend: site.help_url }}"><!--<i class="fa fa-pencil"></i> &nbsp;-->edit</a>
           </div>
           {{ content }}
           {% include section_nav.html %}
@@ -25,5 +22,6 @@ layout: default
 
       <div class="clear"></div>
 
+      {% include wiki_nav.html %}
     </div>
   </section>

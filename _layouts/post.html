@@ -2,17 +2,44 @@
 layout: default
 ---
 
-<section class="standalone">
-  <div class="grid">
+  <section class="post">
 
-    <div class="unit whole">
-      <article>
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-      </article>
+    <div class="standalone">
+
+      <div class="unit whole">
+        <article>
+          <h2>{{ page.title }}
+            <a href="{{ page.url }}" class="permalink" title="Permalink">∞</a>
+          </h2>
+          <div class="post-category">
+            {{ page.categories | array_to_sentence_string }}
+          </div>
+          <div class="post-meta">
+            <span class="post-date">
+              {{ page.date | date_to_string }}
+            </span>
+            <span class="post-author">
+            <a href="{{ page.author | prepend: "/author/" | prepend: site.baseurl | prepend: site.url | append: "/" | uri_escape }}" class="post-author">
+            {{ page.author }}
+            <img src="{{ page.author | prepend: "/attachment/author/" | prepend: site.baseurl | prepend: site.url | append: ".png"  | uri_escape }}" class="avatar" width="24" height="24">
+            </a>
+            </span>
+            <span class="post-tags">
+              {{ page.tags | array_to_sentence_string }}
+            </span>
+          </div>
+          <div class="clear">
+            <br>
+          </div>
+          <div class="post-content">
+            {{ content }}
+          </div>
+        </article>
+      </div>
+
+      <div class="clear"> </div>
+
+      {% include news_nav.html %}
+
     </div>
-
-    <div class="clear"></div>
-
-  </div>
-</section>
+  </section>

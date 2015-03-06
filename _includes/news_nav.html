@@ -1,7 +1,9 @@
-<div class="news-nav-mobile unit whole show-on-mobiles">
+<div class="news-nav-mobile unit whole">
   <select onchange="if (this.value) window.location.href=this.value">
-    <option value="">Navigate the blog…</option>
-    <option value="/news/">Home</option>
+    <option value="">Navigate the site…</option>
+    <option value="/">Home</option>
+    <option value="/wiki/">Wiki</option>
+    <option value="/news/">News</option>
     <optgroup label="Posts">
       {% for post in site.posts %}
       <option value="{{ post.url }}">{{ post.title }}</option>

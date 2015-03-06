@@ -1,7 +1,12 @@
 ---
-layout: default
+layout: author
 title: "Joanna Rutkowska"
 permalink: "/author/Joanna Rutkowska/"
+categories: 
+- architect
+- core
+- management
+- press
 name: "Joanna Rutkowska"
 email: "joanna@invisiblethingslab.com"
 fingerprint: "ED727C306E766BC85E621AA65FA6C3E4D9AFBB99"

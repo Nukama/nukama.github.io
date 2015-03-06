@@ -530,6 +530,12 @@ aside {
     opacity: .5;
     cursor: default;
   }
+
+.docs-nav-mobile select {
+  color: #000;
+  width: 100%;
+}
+
 }
 
 /* Wiki */
@@ -608,11 +614,6 @@ aside {
   width: 100%;
 }
 
-.wiki-nav-mobile select {
-  color: #000;
-  width: 100%;
-}
-
 /* News */
 
 article h2:first-child { margin-top: 0; }
@@ -675,6 +676,8 @@ article h2:first-child { margin-top: 0; }
   @include border-radius(3px);
   display: inline-block;
   vertical-align: middle;
+  background-color: #444;
+  opacity: 1;
 }
 
 .post-meta {
@@ -692,6 +695,11 @@ article h2:first-child { margin-top: 0; }
   @include border-radius(0 0 10px 10px);
   border-top: 1px solid #555;
   @include box-shadow(0 -1px 0 #2f2f2f);
+}
+
+.news-nav-mobile select {
+  color: #000;
+  width: 100%;
 }
 
 /* Code Highlighting */
