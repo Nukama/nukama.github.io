@@ -4,3 +4,6 @@
 [submodule "attachment"]
 	path = attachment
 	url = https://github.com/Nukama/qubes-attachment
+[submodule "_posts"]
+	path = _posts
+	url = https://github.com/Nukama/qubes-posts
