@@ -3,25 +3,20 @@ layout: default
 ---
 
   <section class="wiki">
-    <div class="standalone">
-
-      {% include wiki_nav.html %}
-
-      <div class="unit whole">
+    <div class="wrapper">
+      <div>
         <article>
           <!--
           <h1>{{ page.title }}</h1>
           -->
-          <div class="improve right hide-on-mobiles">
-            <a href="{{ "_edit" | prepend: page.url | replace: '/wiki', '' | prepend: site.help_url }}"><!--<i class="fa fa-pencil"></i> &nbsp;-->edit</a>
-          </div>
           {{ content }}
-          {% include section_nav.html %}
+          <div>
+            <a href="{{ "/edit/master" | prepend: site.project_repo_wiki | prepend: site.project_repo_path | append: page.url | replace: '/wiki', '' | append: '.md' | replace: '/.md','.md' }}">edit source of this page</a>
+          </div>
         </article>
       </div>
 
       <div class="clear"></div>
 
-      {% include wiki_nav.html %}
     </div>
   </section>
