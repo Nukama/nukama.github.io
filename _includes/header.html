@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">
+    <a class="site-title" href="{{ site.baseurl }}/wiki/">
     <img src="{{ "/attachment/icons/128x128/apps/qubes-logo-icon.png" | prepend: site.baseurl | prepend: site.url }}"
                 width="48" height="48" alt="Qubes OS Project">{{ site.title }}</a>
 
@@ -18,11 +18,13 @@
 
       <div class="trigger">
         <a class="page-link" href="{{ "/wiki/" | prepend: site.baseurl | prepend: site.url }}">Home</a>
+<!--
         {% for page in site.pages %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
+-->
         {% for section in site.data.wiki %}
           {% include nav-wiki.html items=section.wiki %}
         {% endfor %}
