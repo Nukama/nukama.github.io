@@ -25,11 +25,10 @@ scsi:  |
 versions:
 
 - qubes:	'R2'
-  xen:		'4.1.6.1'
-  kernel:	'3.12.38-1'
+  xen:  '4.1.6.1'
+  kernel:  '3.12.38-1'
   works:  'yes'
 
   remark:  ''
   credit:  'Zrubi'
-
 ---
