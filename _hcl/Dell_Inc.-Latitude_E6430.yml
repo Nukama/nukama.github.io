@@ -24,7 +24,7 @@ scsi:  |
 
 versions:
 
-- qubes:	'R2'
+- qubes:  'R2'
   xen:  '4.1.6.1'
   kernel:  '3.12.38-1'
   works:  'yes'
@@ -32,7 +32,7 @@ versions:
   remark:  '-'
   credit:  'Zrubi'
   
-- qubes:	'R1'
+- qubes:  'R1'
   xen:  '4.1.6.1'
   kernel:  '3.12.38-1'
   works:  'yes'
