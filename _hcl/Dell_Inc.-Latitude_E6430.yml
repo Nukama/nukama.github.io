@@ -29,6 +29,6 @@ versions:
   kernel:  '3.12.38-1'
   works:  'yes'
 
-  remark:  ''
+  remark:  '-'
   credit:  'Zrubi'
 ---
