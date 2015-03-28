@@ -1,5 +1,6 @@
 ---
 layout:  hcl
+type: laptop
 brand:  'Dell Inc.'
 model:  'Latitude E6430'
 bios:  'A11'
