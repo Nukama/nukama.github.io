@@ -7,3 +7,6 @@
 [submodule "_posts"]
 	path = _posts
 	url = https://github.com/Nukama/qubes-posts
+[submodule "_hcl"]
+	path = _hcl
+	url = https://github.com/Nukama/qubes-hcl
