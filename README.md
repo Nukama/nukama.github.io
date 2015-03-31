@@ -19,6 +19,7 @@ Run `jekyll s -V --trace (--skip-initial)`.
 
 # Running on git post-receive hook
 
+'''
 GIT_REPO=/usr/home/git/repositories/www.qubes-os.org.git
 GIT_CLONE=/usr/home/git/tmp/www.qubes-os.org
 PUBLIC_WWW=/usr/local/www/qubes-os.org/www/
@@ -34,3 +35,4 @@ find $PUBLIC_WWW -type f -print0 | xargs -0 chmod 666
 find $PUBLIC_WWW -type d -print0 | xargs -0 chmod 777
 
 exit
+'''
