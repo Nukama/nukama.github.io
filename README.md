@@ -13,6 +13,8 @@ for content:
 
 Use `git clone --recursive` to check out submodules, too.
 
+Use `git submodule foreach git pull` to update submodules.
+
 # Running jekyll on your localhost
 
 Run `jekyll s -V --trace (--skip-initial)`.
