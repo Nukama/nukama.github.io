@@ -16,7 +16,7 @@ github_username:  QubesOS
 project_url: "https://www.qubes-os.org"
 project_repo_path: "https://github.com/QubesOS"
 project_repo_site: "/qubesos.github.io"
-project_repo_wiki: "/qubes-wiki"
+project_repo_doc: "/qubes-doc"
 project_repo_artwork: "/qubes-artwork"
 
 
@@ -32,11 +32,11 @@ gems:
   - jekyll-redirect-from
 
 collections:
-  docs:
+  author:
     output: true
-  wiki:
+  doc:
     output: true
   hcl:
     output: true
-  author:
+  wiki:
     output: true
