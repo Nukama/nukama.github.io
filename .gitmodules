@@ -1,6 +1,6 @@
 [submodule "_wiki"]
 	path = _wiki
-	url = https://github.com/Nukama/nukama.github.io.wiki.git
+	url = https://github.com/Nukama/qubes-doc
 [submodule "attachment"]
 	path = attachment
 	url = https://github.com/Nukama/qubes-attachment
